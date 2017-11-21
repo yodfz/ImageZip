@@ -17,7 +17,7 @@ export default function (file,opt={quality:0.7}) {
                 console.log('压缩之后大小:'+blob.size);
                 console.log('压缩比例:'+(blob.size/file.size));
                 res(blob);
-            },'image/jpeg',quality);
+            },'image/jpeg',opt.quality);
         };
         reader.readAsDataURL(file);
     })

@@ -8,7 +8,11 @@
 </head>
 <body>
     <input type="file" onchange="testChange(this)" />
+    <button onclick="test()">test</button>
     <script>
+        function test() {
+            alert('test')
+        }
         function testChange($this,file,opt={quality:0.7}){
             console.log($this.files)
         let cavans = document.createElement('canvas')
